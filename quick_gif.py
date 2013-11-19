@@ -29,8 +29,7 @@ def main():
 	if not os.path.exists(directory):
 		os.makedirs(directory)
 
-	time = args.end - args.start
-	subprocess.call(['ffmpeg', '-i', args.file, '-t', str(time), '-ss', str(args.start), os.path.join(directory, 'image-%d.png')])
+	subprocess.call(['ffmpeg', '-i', args.file, '-ss', str(args.start), '-to', str(args.end), os.path.join(directory, 'image-%05d.png')])
 
 	if args.text:
 		file_names = sorted((fn for fn in os.listdir(directory)))
