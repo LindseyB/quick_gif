@@ -17,10 +17,10 @@ def main():
 	directory = "screenshots"
 
 	parser = argparse.ArgumentParser(description='Create a gif.')
-	parser.add_argument('-f', '--file', help='input video file')
-	parser.add_argument('-s', '--start', type=int, help='start time in seconds')
-	parser.add_argument('-e', '--end', type=int, help='end time in seconds')
-	parser.add_argument('-o', '--output', type=str, nargs='?', default='output.gif', help='name of the output file')
+	parser.add_argument('-f', '--file', required=True, help='input video file')
+	parser.add_argument('-s', '--start', type=int, required=True, help='start time in seconds')
+	parser.add_argument('-e', '--end', type=int, required=True, help='end time in seconds')
+	parser.add_argument('-o', '--output', type=str, required=True, nargs='?', default='output.gif', help='name of the output file')
 	parser.add_argument('--text', type=str, nargs='?', help='text to put on the bottom of the gif')
 	parser.add_argument('--fontsize', type=int, nargs='?', default=16, help='the size of the font to use for the gif')
 	parser.add_argument('--padding', type=int, nargs='?', default=5, help='the amount of distance from the bottom the text should appear')

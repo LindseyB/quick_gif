@@ -5,11 +5,10 @@ Gotta go fast!
 
 ```
 python quick_gif.py -h
-usage: quick_gif.py [-h] [-f FILE] [-s START] [-e END] [-o [OUTPUT]]
-                    [--text [TEXT]] [--fontsize [FONTSIZE]]
-                    [--padding [PADDING]]
+usage: quick_gif.py [-h] -f FILE -s START -e END -o [OUTPUT] [--text [TEXT]]
+                    [--fontsize [FONTSIZE]] [--padding [PADDING]]
 
-Create a gif
+Create a gif.
 
 optional arguments:
   -h, --help            show this help message and exit
