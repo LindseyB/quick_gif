@@ -1,6 +1,8 @@
 Quick Gif
 ---------
 
+![Gotta go fast](http://images2.wikia.nocookie.net/__cb20130812202124/the-naruto-world/images/3/3e/Gotta_go_fast.gif)
+
 Gotta go fast!
 
 ```
