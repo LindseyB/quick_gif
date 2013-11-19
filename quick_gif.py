@@ -52,8 +52,7 @@ def main():
 			drawText(draw, x, y, args.text, font)
 			image.save(os.path.join(directory,f))
 
-	# for some reason when I tried this with an array it didn't like my 0?
-	subprocess.call('convert -loop 0 ' + os.path.join(directory, '*') + ' ' + args.output, shell=True)
+	subprocess.call(['convert', '-loop', '0', os.path.join(directory, '*.png'), args.output])
 
 	shutil.rmtree(directory)
 
